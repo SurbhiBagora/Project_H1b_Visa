@@ -1,0 +1,11 @@
+select job_title,year,count(case_status) as temp from h1b_final where year ='2011' AND case_status='CERTIFIED' group by job_title,year order by temp desc limit 10;
+
+select job_title,year,count(case_status) as temp from h1b_final where year ='2012' AND case_status='CERTIFIED' group by job_title,year order by temp desc limit 10;
+
+select job_title,year,count(case_status) as temp from h1b_final where year ='2013' AND case_status='CERTIFIED' group by job_title,year order by temp desc limit 10;
+
+select job_title,year,count(case_status) as temp from h1b_final where year ='2014' AND case_status='CERTIFIED' group by job_title,year order by temp desc limit 10;
+
+select job_title,year,count(case_status) as temp from h1b_final where year ='2015' AND case_status='CERTIFIED' group by job_title,year order by temp desc limit 10;
+
+select job_title,year,count(case_status) as temp from h1b_final where year ='2016' AND case_status='CERTIFIED' group by job_title,year order by temp desc limit 10;
