@@ -1,0 +1,6 @@
+create database project;
+use project;
+create table question11(job_title varchar(100),success_rate float,petitions int);
+
+sqoop export --connect jdbc:mysql://localhost/project --username root --password 'surbhi' --table question11 --update-mode allowinsert --export-dir 'hdfs://localhost:54310/niit/question10ans' --input-fields-terminated-by '\t';
+
